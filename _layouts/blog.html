@@ -1,0 +1,19 @@
+---
+layout: content
+---
+
+ <div class="center">
+    <div class="blog-posts">
+         <h2>Blog Posts</h2>
+         
+		<article class="posts">
+		    <div class="blog-post-header">
+		        <h3><a href="{{ post.url }}">{{ page.title }}</a></h3>
+		        <h4>{{ page.date | date: "%m/%d/%y" }}</h4>
+		    </div>
+		    
+		    {{ content }}
+
+		</article>
+	</div>
+</div>

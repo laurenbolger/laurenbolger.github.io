@@ -1,0 +1,997 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+* {
+    font-size: 1em;
+}
+
+body {
+    background-color: rgba(225, 190, 145, .1);
+    color: #342C1F;
+    font-family: "skolar", serif;
+    font-size: 1.313em;
+    
+}
+
+/*Index*/
+
+.index-hero {
+    background-image: url("../img/index-img-2.jpg");
+    background-color: #fed4a5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 35%;
+    background-size: cover;
+    background-repeat: repeat;
+    max-width: 500px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+
+}
+
+.right-page{
+    position: absolute;
+    top: 0;
+    left: 35%;
+    right: 0;
+    bottom: 0;
+    overflow: scroll;
+    padding-left: 24px;
+    padding-right: 24px;   
+}
+
+.header-header {
+    text-align: center;
+}
+
+.header-header a {
+    text-decoration: none;
+    color: black;
+}
+
+.header-header a:hover {
+    color: #8C8C8C;
+}
+
+.logo {
+    margin: 0;
+    font-size: 4.762em;
+    padding-top: 60px;
+    line-height: 1;
+    font-family: "ff-spinoza-web-pro",sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.header-nav {
+    font-family: "skolar", serif;
+    font-weight: 600;
+}
+
+.header-nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.header-nav li {
+    font-size: 1em;
+}
+
+.recent-entry {
+    margin: 110px 0;
+}
+
+.recent-entry h2 {
+    text-align: center;
+    margin: 0;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.recent-entry h2:before {
+    content: "Chapter 1";
+    display: block;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 0.905em;
+    text-align: center;
+}
+
+.recent-entry ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.2;
+}
+
+.recent-entry a {
+    color: gray;
+    text-decoration: none;
+    font-size: 0.857em;
+}
+
+.recent-entry a:hover {
+    color: #BFBFBF;
+}
+
+.index-blog p {
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.more {
+    text-align: center;
+    color: gray;
+    float: right;
+    padding-right: 50px;
+    padding-bottom: 24px;
+}
+
+.more:hover {
+    color: #BFBFBF;
+}
+
+.footer {
+    box-shadow: 0 0 3px black;
+    clear: both;
+    overflow: auto;
+    background-color: #f3e6d5;  
+}
+
+.foot-nav ul {
+    list-style: none;
+    padding: 0 50px;
+}
+
+.foot-nav li {
+    float: left;
+    width: 33.333%;
+    text-align: center;
+    margin: 5px 0 15px;
+}
+
+.foot-nav li a {
+    color: #5E261C;   
+    text-decoration: none;
+}
+
+.foot-nav a:hover {
+    color: #816347;
+    text-decoration: underline;
+}
+
+.foot-nav li:first-child {
+    text-align: left;
+}
+
+.foot-nav .last {
+    text-align: right;
+}
+
+.foot-nav li:last-child {
+    text-align: right;
+}
+
+/*Blog*/
+
+.blog-header{
+    text-align: center;
+    background-image: url(../img/fossil.jpg);
+    background-color: #fed4a5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.blog-header a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+.blog-header a:hover {
+    color: black;
+    text-shadow: none;
+}
+
+.blog-posts h2 {
+    font-size: 1em;
+    padding-bottom: 20px;
+}
+
+.blog-posts h2:before {
+    content: "Chapter 3";
+    display: block;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 0.905em;
+}
+
+.center {
+    width: 60%;
+    margin: auto;
+}
+
+.dog {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    height: auto;
+    max-width: 100%;
+}
+
+.older {
+    float: right;
+}
+
+.older a {
+    position: relative;
+    padding: 2px 20px 0;
+    color: black;
+    text-decoration: none;
+    border-top: 2px solid black;
+}
+
+.older a:after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -12px;
+    display: block;
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-left: 8px solid black;
+}
+
+.newer {
+    float: left;
+}
+
+.newer a {
+    position: relative;
+    padding: 2px 20px 0;
+    color: black;
+    text-decoration: none;
+    border-top: 2px solid black;
+}
+
+.newer a:after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -12px;
+    display: block;
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-right: 8px solid black;
+}
+
+.arrows {
+   padding-bottom: 50px;
+}
+
+.arrows a:hover {
+    color: #8C8C8C;
+    border-top-color: #8C8C8C;
+}
+
+.newer a:hover:after {
+    border-right-color: #8C8C8C;
+}
+
+.older a:hover:after {
+    border-left-color: #8C8C8C;
+}
+
+.posts {
+     margin-bottom: 40px;
+     padding: 0 20px 20px 30px;
+     background-color: #f6ece0;
+     border: 1px solid #eedac1;
+     border-radius: 5px;
+}
+
+.blog-post-header h3 {
+    font-weight: 600;
+    font-size: 1.429em;
+    margin: 20px 0 0;
+}
+
+.blog-post-header h4 {
+    font-weight: 300;
+    font-style: italic;
+    font-size: 0.762em;
+    line-height: 1;
+    color: #595959;
+    margin: 0;
+}
+
+.blog-post-header a {
+    text-decoration: none;
+    color: #505050;
+}
+
+.blog-post-header a:hover {
+    color: #8C8C8C;
+}
+
+/*about*/
+
+.middle {
+    width: 80%;
+    margin: auto;
+}
+
+.about-img {
+    width:  400px;
+    height: auto;
+    box-shadow: 0 0 5px black;
+    margin-left: 30px;
+}
+
+.tar {
+   max-width: 100%;
+}
+
+.me {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+.about-cap {
+    text-align: center;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.cap-2 {
+    margin-bottom: 40px;
+}
+
+.about-text {
+    width: 50%;
+    float: left;
+}
+
+.about-text h2 {
+    font-size: 1em;
+    padding-bottom: 20px;
+}
+
+.about-text h3 {
+    font-size: 0.762em;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 20px;
+    color: #816347;
+}  
+
+.about-text h2:before {
+    content: "Chapter 2";
+    display: block;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 0.905em;
+   
+}
+
+cite {
+    display: block;
+    font-size: 0.705em;
+    line-height: 1.4;
+}
+
+sup {
+    color: #816347;
+}
+
+.right-imgs {
+    margin-top: 100px;
+    width: 50%;
+    float: left;   
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+
+@media only screen and (max-width: 1100px) {
+    .center {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 1045px) {
+    /*index*/
+
+    /*About*/
+
+   .right-imgs {
+    margin-top: 150px;
+    }
+
+    /*Blog*/
+}
+
+@media only screen and (max-width: 958px) {
+    /*Index*/
+
+    /*About*/
+
+    .about-img {
+        float: none;
+        margin-left: 0;
+        width:  500px;
+    }
+
+    .about-text {
+        width: 100%;
+        float: none;
+    }
+
+    .right-imgs {
+        margin-top: 20px;
+        width: 100%;
+        float: none;  
+
+    }
+
+    .middle {
+        width: 80%;
+    }
+
+    .about-cap {
+        float: none;
+        margin-bottom: 24px;
+    }
+
+    .me {
+        margin-top: 0;
+    }
+
+    .about-text h2 {
+        text-align: center
+    }
+
+    .about-text h3 {
+        text-align: center
+    }
+
+    /*Blog*/
+
+    .blog-posts h2 {
+        text-align: center;
+    }
+
+    .blog-posts h3 {
+        text-align: center;
+    }
+
+    .blog-posts h4 {
+        text-align: center;
+    }
+
+    .center {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+
+    /*Index*/
+
+    .index-blog p {
+        font-size: .833em;
+    }
+
+    /*About*/
+
+    /*Blog*/
+}
+
+@media only screen and (max-width: 800px) {
+
+    /*Index*/
+
+    /*About*/
+
+    /*Blog*/
+
+    .center {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 725px) {
+    /*Index*/
+
+    /*About*/
+
+    .right-imgs {
+        margin-top: 10px;
+    }
+
+    /*Blog*/
+    .center {
+        width: 90%;
+    }
+}
+
+
+@media only screen and (max-width: 680px) {
+
+    /*Index*/
+     .index-blog p {
+        font-size: 1em;
+    }
+
+    .index-hero {
+        display: none;
+    }
+
+    .right-page{
+        position: static;
+        overflow: auto;
+        padding: 0;
+        width: 100%; 
+    }
+
+    .responsive-index{
+        text-align: center;
+        background-image: url(../img/fossil.jpg);
+        background-color: #fed4a5;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+    }
+
+    .responsive-index a {
+        color: white;
+        text-shadow: 0 0 5px black;
+    }
+
+    .responsive-index a:hover {
+        color: black;
+        text-shadow: none;
+    }
+
+    .index-blog {
+        margin: 0 24px;
+    }
+
+    .recent-entry ul{
+        line-height: 1.7;
+    }
+
+    /*About*/
+
+    .middle {
+        width: 90%;
+    }
+
+    /*Blog*/
+    .center {
+        width: 93%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    /*Index*/
+
+    /*About*/
+
+    .middle {
+        width: 93%;
+    }
+
+    /*Blog*/
+
+    .posts {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    /*Index*/
+
+    .logo {
+        font-size: 3.810em;
+        padding-top: 40px;
+    }
+
+     .responsive-index {
+        height: 200px;
+    }
+
+    .index-blog {
+        margin-left: 7px;
+        margin-right: 3px;
+        font-size: 1rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .index-blog p {
+        font-size: 1.250em;
+    }
+
+     .recent-entry {
+        padding: 0;
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .more {
+        font-size: 1.1em;
+    }
+
+    .index-blog h3 {
+        text-align: center;
+    }
+    .index-blog h4 {
+        text-align: center;
+    }
+
+    /*About*/
+
+    /*Blog*/
+
+    .blog-header {
+        height: 200px;
+    }
+ 
+    .posts {
+        font-size: 1rem;
+    }
+
+    .posts p {
+        font-size: 1.250em;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {   
+
+    /*Index*/
+
+    .index-blog {
+        font-size: 1rem;
+    }
+    
+    .recent-entry {
+        font-size: 1rem;
+    }
+
+    .index-blog p {
+        font-size: 1em;
+    }
+
+    .more {
+        font-size: 1.125em;
+    }
+
+    /*About*/
+
+    .middle {
+        font-size: 1rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+
+    .about-text p {
+        font-size: 1em;
+        line-height: 1.5;
+    }
+
+    .footer {
+        font-size: 1rem;
+    }
+
+    /*Blog*/
+
+    .blog-post-header h2 {
+        font-size: 1.125em;
+    }
+
+    .center {
+        font-size: 1rem;
+    }
+
+    .center p {
+        font-size: 1em;
+    }
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
